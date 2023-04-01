@@ -11,8 +11,10 @@ app.use(bodyParser.urlencoded({ extended: true }));
 //Route Imports
 
 const room = require("./routes/roomRoute");
+const user = require("./routes/userRoute");
 
 app.use("/api/v1", room);
+app.use("/api/v1", user);
 
 //middleware for errors
 
